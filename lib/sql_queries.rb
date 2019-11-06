@@ -10,7 +10,7 @@ def selects_the_titles_of_all_projects_and_their_pledge_amounts_alphabetized_by_
   "SELECT pr.title, SUM(amount) AS total_amt 
   FROM projects pr
   JOIN pledges pl 
-    ON pr.id = pl.project_id; 
+    ON pr.id = pl.project_id
   GROUP BY(pr.title);"
 end
 
